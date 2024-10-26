@@ -1,0 +1,148 @@
+body {
+    background: #7cc4ff18 !important;
+    cursor: pointer;
+    margin: 0;
+    overflow-x: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+
+body :hover {
+    color: rgb(7, 85, 25);
+}
+
+@media (max-width: 650px) {
+    body{
+        font-size: 0.85rem !important;
+    }
+}
+
+/* Default to hide the element */
+.navbar-brand-hide {
+    display: none;
+}
+
+
+@media (max-width: 991px) {
+    .navbar-brand-hide {
+        display: block;
+        font-size: 36px;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    .ustom {
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+    }
+}
+
+.ustom {
+    margin: 20px 40px;
+}
+
+
+.navbar-brand-show {
+    display: none;
+}
+
+/* Media query to show the element when screen width is above */
+@media (min-width: 991px) {
+    .navbar-brand-show {
+        display: block;
+        font-size: 36px;
+        padding: 0;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+}
+
+.navbar {
+    background: #ddf0ff
+}
+
+.nav-item {
+    padding-left: 8px;
+}
+
+.nav-item a {
+    color: #000000 !important;
+    text-decoration: none !important;
+    transition: 0.2s;
+}
+
+.nav-item a:hover,
+.nav-item a:active,
+.nav-item a:focus {
+    color: #308ef9 !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.card-body {
+    background-color: #55b3ff18 !important;
+}
+
+.card-text {
+    font-size: 4mm;
+}
+
+.card {
+    width: 13rem;
+}
+
+@media (max-width: 850px) {
+    .card-hide {
+        display: none;
+    }
+
+    .card {
+        width: 8rem;
+    }
+
+    .img-thumbnail {
+        max-height: 100px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .font-monospace {
+        font-size: larger;
+    }
+}
+
+.placeholder {
+    background-color: #299dfb83 !important;
+}
+
+.about-section {
+    background-color: #f8f9fa;
+    padding-top: 50px;
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 1000px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #6c757d;
+}
+
+

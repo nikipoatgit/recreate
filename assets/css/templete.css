@@ -1,0 +1,246 @@
+body {
+    background: #7cc4ff18 !important;
+    cursor: pointer;
+    overflow-x: scroll;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+body :hover {
+    color: rgb(1, 49, 7);
+}
+
+@media (max-width: 650px) {
+    body {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Default to hide the element */
+.navbar-brand-hide {
+    display: none;
+}
+
+/* Media query to hide the element when screen width is below  */
+@media (max-width: 991px) {
+    .navbar-brand-hide {
+        display: block;
+        font-size: 36px;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+}
+
+
+/* Default to hide the element */
+.navbar-brand-show {
+    display: none;
+}
+
+/* Media query to show the element when screen width is above */
+@media (min-width: 991px) {
+    .navbar-brand-show {
+        display: block;
+        font-size: 36px;
+        padding: 0;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+    }
+}
+
+.navbar {
+    background: #ddf0ff
+}
+
+.nav-item {
+    padding-left: 8px;
+}
+
+.nav-item a {
+    color: #000000 !important;
+    text-decoration: none !important;
+    transition: 0.2s;
+}
+
+.nav-item a:hover,
+.nav-item a:active,
+.nav-item a:focus {
+    color: #308ef9 !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.breadcrumb-item-custom {
+    text-decoration: none !important;
+    font-size: 1.1rem !important;
+}
+
+.breadcrumb {
+    margin: 90px 0px 25px 80px;
+}
+
+.device-adj {
+    width: 20% !important;
+}
+
+.active-link {
+    color: #007bff !important;
+    position: relative;
+    background-color: #ffffff00 !important;
+}
+
+.active-link::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    bottom: 0;
+    width: 3px;
+    height: 25px;
+    background-color: #007bff;
+    border-radius: 1px;
+    animation: slideIn 0.1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+.container-main {
+    margin: 15px 60px;
+    padding: 15px 5px 15px 1px;
+    background-color: #eaf3fc;
+    border-radius: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.085);
+    /* Adjust values for different shadow effects */
+}
+
+@media (max-width: 799px) {
+    .container-main {
+        padding: 15px;
+        margin: 10px 10px;
+    }
+
+    .scrollable-content {
+        padding: 0px 5px 5px 10px !important;
+        width: 100% !important;
+
+    }
+
+    .device-adj {
+        display: none !important;
+    }
+
+    .breadcrumb {
+        margin: 90px 0px 25px 15px;
+    }
+
+}
+
+.device-adj nav nav a {
+    font-size: 0.8rem;
+}
+
+@media (min-width:950px) {
+    .device-adj nav nav a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .scrollable-content {
+        height: 90vh;
+        overflow-y: auto;
+        width: 80% !important;
+    }
+
+    /* Customize the scrollbar */
+    .scrollable-content::-webkit-scrollbar {
+        width: 4px;
+        /* Adjust the width as needed */
+    }
+
+    .scrollable-content::-webkit-scrollbar-track {
+        background: #f1f1f100;
+        /* Background of the scrollbar track */
+    }
+
+    .scrollable-content::-webkit-scrollbar-thumb {
+        background: rgba(59, 160, 248, 0.224);
+        /* Color of the scrollbar thumb */
+        border-radius: 4px;
+        /* Rounded corners for the thumb */
+    }
+
+    .scrollable-content::-webkit-scrollbar-thumb:hover {
+        background: #b3e1ff00;
+        /* Slightly darker shade when hovering */
+    }
+}
+
+@media (max-width:799) {
+    .scrollable-content {
+        width: 83% !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .scrollspy-example-2 {
+        font-size: 1.3rem !important;
+    }
+}
+
+.para p {
+    margin-bottom: 10px;
+    color: #797979;
+}
+
+.para code {
+    background-color: #ffd6d63d;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.placeholder {
+    background-color: #299dfb83 !important;
+}
+
+.about-section {
+    background-color: #f8f9fa00;
+    padding-top: 50px;
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 1000px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #6c757d;
+}
